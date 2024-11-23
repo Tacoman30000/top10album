@@ -39,6 +39,7 @@
         <p12><br>https://open.spotify.com/playlist/50GMZsFJzO0O3vLb1FJfqP?si=eUP6kIZJTSq_CbJQ0fWnzQ</p12>
         <p13><br>its my crowning achievement....</p13>
         <p14><br>Here are some of my favourites!<br></p14>
+        
         <album>The Dowmward Spiral - Nine Inch Nails</album>
         <button onclick="changeAlbum()"> Change Album?</button>
         <script>
@@ -49,9 +50,9 @@
                     `Badmotorfinger - Soundgardrn`,
                     `Nevermind - Nirvana`,
                     `Songs for the Deaf - Queens of the Stone Age`,
-                    ];
-                    var album = document.querySelector("blockquote");
-                    blockquote.innerHTML = albums[index];
+                ];
+                    var album = document.querySelector("Albums");
+                    album.innerHTML = albums[index];
 
                     index++;
                     if (index >= 4){
