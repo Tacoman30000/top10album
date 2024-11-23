@@ -38,6 +38,28 @@
         <img src="https://preview.redd.it/is-this-ai-or-not-this-is-the-first-thing-ive-ever-seen-v0-tnzg32ba7lrb1.jpg?width=640&crop=smart&auto=webp&s=1e64bc1647e7d71ae412b9e125cee7255c7a7a23"
         <p12><br>https://open.spotify.com/playlist/50GMZsFJzO0O3vLb1FJfqP?si=eUP6kIZJTSq_CbJQ0fWnzQ</p12>
         <p13><br>its my crowning achievement....</p13>
+        <p14><br>Here are some of my favourites!<br></p14>
         <album>The Dowmward Spiral - Nine Inch Nails</album>
+        <button onclick="changeAlbum()"> Change Album?</button>
+        <script>
+            var index = 0;
+            function changeAlbum(){
+                var albums = [
+                    `Audioslave - Ausioslave`,
+                    `Badmotorfinger - Soundgardrn`,
+                    `Nevermind - Nirvana`,
+                    `Songs for the Deaf - Queens of the Stone Age`,
+                    ];
+                    var album = document.querySelector("blockquote");
+                    blockquote.innerHTML = albums[index];
 
-    
+                    index++;
+                    if (index >= 4){
+                        index = 0;
+                    }
+
+            }
+
+        </script>
+    </body>
+</html>
